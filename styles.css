@@ -1,0 +1,79 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #ffafbd, #ffc3a0);
+    color: #333;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+header {
+    padding: 50px 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
+    color: #ff69b4;
+}
+
+header p {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+section {
+    padding: 40px 20px;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ff69b4;
+}
+
+section p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+section img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.button-container {
+    margin-top: 30px;
+}
+
+.music-button {
+    background-color: #ff69b4;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.music-button:hover {
+    background-color: #ff85c
