@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sierra's World</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom right, #ffafbd, #ffc3a0);
+            color: #333;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header {
+            padding: 50px 0;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+            color: #ff69b4;
+        }
+
+        header p {
+            font-size: 1.5em;
+            margin-top: 10px;
+        }
+
+        section {
+            padding: 40px 20px;
+            margin-top: 20px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        section h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #ff69b4;
+        }
+
+        section p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        section img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .button-container {
+            margin-top: 30px;
+        }
+
+        .music-button {
+            background-color: #ff69b4;
+            color: #fff;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .music-button:hover {
+            background-color: #ff85c9;
+        }
+
+        .application-section {
+            margin-top: 40px;
+            padding: 40px 20px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .application-section form {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .application-section label {
+            font-size: 1.2em;
+            margin-top: 10px;
+            display: block;
+        }
+
+        .application-section input,
+        .application-section select,
+        .application-section textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .application-section textarea {
+            resize: vertical;
+        }
+
+        .submit-button {
+            background-color: #ff69b4;
+            color: #fff;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit-button:hover {
+            background-color: #ff85c9;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        footer p {
+            font-size: 1em;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to Sierra's World</h1>
+            <p>Discover the life of a girl who loves music, Yung Lean, and all things girly!</p>
+        </header>
+
+        <section>
+            <h2>About Sierra</h2>
+            <p>Sierra is a vibrant, fun-loving girl with a passion for all things girly. Whether she's listening to her favorite tunes, enjoying the music of Yung Lean, or floating on the water with her favorite flotation devices, Sierra knows how to make the most of life.</p>
+            <p>Her love for music goes beyond just the beats—it's about the feelings and vibes that each song brings. Sierra finds herself lost in the dreamy and atmospheric sounds of Yung Lean, an artist whose music resonates with her soul. On any given day, you might find Sierra chilling on a pool float, soaking up the sun, and vibing to the latest tracks.</p>
+            <img src="https://via.placeholder.com/400x300" alt="Sierra enjoying life">
+            <div class="button-container">
+                <button class="music-button" onclick="playMusic()">Play Sierra's Favorite Song</button>
+            </div>
+        </section>
+
+        <section class="application-section">
+            <h2>Boyfriend Application</h2>
+            <form id="boyfriend-application">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" min="18" placeholder="Enter your age" required>
+
+                <label for="favorite-food">What's your favorite food?</label>
+                <input type="text" id="favorite-food" name="favorite-food" placeholder="Pizza, sushi, or...?" required>
+
+                <label for="yung-lean-opinion">How do you feel about Yung Lean?</label>
+                <select id="yung-lean-opinion" name="yung-lean-opinion" required>
+                    <option value="fan">I vibe with Yung Lean.</option>
+                    <option value="neutral">I don't mind him.</option>
+                    <option value="hater">Who?</option>
+                </select>
+
+                <label for="flotation-device">Choose your ideal flotation device:</label>
+                <select id="flotation-device" name="flotation-device" required>
+                    <option value="unicorn">Giant inflatable unicorn</option>
+                    <option value="pizza">Slice of pizza float</option>
+                    <option value="donut">Classic donut</option>
+                    <option value="swan">Elegant swan</option>
+                </select>
+
+                <label for="dream-date">Describe your dream date with Sierra:</label>
+                <textarea id="dream-date" name="dream-date" rows="5" placeholder="Make it interesting..." required></textarea>
+
+                <label for="superpower">If you could have any superpower, what would it be?</label>
+                <input type="text" id="superpower" name="superpower" placeholder="Flying, invisibility, or...?" required>
+
+                <label for="why-sierra">Why do you think you and Sierra would make a great team?</label>
+                <textarea id="why-sierra" name="why-sierra" rows="5" placeholder="Convince us..." required></textarea>
+
+                <div class="button-container">
+                    <button type="submit" class="submit-button">Submit Application</button>
+                </div>
+            </form>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Sierra's World. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        function playMusic() {
+            alert("Playing Sierra's favorite song: Yung Lean - Kyoto!");
+            // You can replace this alert with actual music playback code.
+        }
+
+        document.getElementById('boyfriend-application').onsubmit = function(event) {
+            event.preventDefault();
+            alert("Thanks for applying! Sierra will review your application.");
+        }
+    </script>
+</body>
+</html>
