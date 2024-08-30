@@ -1,4 +1,3 @@
-
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -76,4 +75,68 @@ section img {
 }
 
 .music-button:hover {
-    background-color: #ff85c
+    background-color: #ff85c9;
+}
+
+.application-section {
+    margin-top: 40px;
+    padding: 40px 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.application-section form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.application-section label {
+    font-size: 1.2em;
+    margin-top: 10px;
+    display: block;
+}
+
+.application-section input,
+.application-section select,
+.application-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.application-section textarea {
+    resize: vertical;
+}
+
+.submit-button {
+    background-color: #ff69b4;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #ff85c9;
+}
+
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer p {
+    font-size: 1em;
+    color: #555;
+}
